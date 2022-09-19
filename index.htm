@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+</body>
+
+<script>
+    
+    const container = document.querySelector('.container');
+
+    function hearts(){
+        const creat = document.createElement('hearts');
+        creat.classList.add('hearts');
+        creat.innerHTML = '&#10084;';
+
+
+        creat.style.left= Math.random() * 100 + 'vw';
+        creat.style.animationDuration = Math.random()*3 + 2 +'s';
+
+        container.appendChild(creat);
+        console.log(creat);
+    }
+
+   
+
+    setInterval(hearts, 1000);
+    setTimeout(hearts.remove , 5000)
+    
+</script>
+</html>

@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+
+.container{
+    height: 100vw;
+    width: 100%;
+    overflow-y: hidden ;
+}
+
+.hearts{
+    font-size: 23px;
+    font-weight: bold;   
+    position: fixed; 
+    top: -1vh;
+    left: 0;
+    animation: fall 2s ease-in infinite;
+}
+
+@keyframes fall{
+    to{
+        transform: translateY(250vh);
+    }
+}
